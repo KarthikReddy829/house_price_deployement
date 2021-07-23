@@ -42,7 +42,8 @@ def predict():
     print(area_sqft)
     predictions = Cat_Boost.predict([city,type_of_house,status_of_house,type_of_area,resale,registration,bedrooms,bathrooms,area_sqft])
     
-    predictions = math.floor(np.exp(predictions))
+    predictions = round(np.exp(predictions),2)
+    ##predictions = round(predictions, 2)
     
 
     prediction_text = 'house price is predicted to be :  '+str(predictions) + 'Cr'
