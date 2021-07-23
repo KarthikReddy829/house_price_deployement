@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  h1{
+    color: red;
+  }
+  .image {
+    background-image: url('https://indopropertyworld.com/BuilderProjects/SunShelaOne/images/slider/slider1.jpg');
+    height: 100%; 
+
+/* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  body{
+    height: 100%;
+    margin: 0;
+  }
+  html{
+    height: 100%;
+    margin :0;
+  }
+  
+
+
+</style></head>
+
+
+<body>
+
+  <div class="image" >
+
+<h1>City wise house Price Prediction in India</h1>
+
+<p>The select element is used to create a drop-down list.</p>
+
+<form action="/predict" method="POST">
+  <label for="city">Choose a city:</label>
+  <select name="city" id="city">
+    <option value="mumbai">Mumbai</option>
+    <option value="bangalore">Banglore</option>
+    <option value="pune">Pune</option>
+    <option value="Gurgaon">Gurgaon</option>
+    <option value="hyderabad">hyderabad</option>
+  </select>
+  <br><br>
+  <label for="type_of_house">Choose type of house:</label>
+  <select name="type_of_house" id="type_of_house">
+    <option value="residential apartment">residential apartment</option>
+    <option value="( rk) studio apartment">( rk) studio apartment</option>
+    <option value="independent house">independent house</option>
+    <option value="residential land / plot">residential land / plot</option>
+    <option value="residential property">residential property</option>
+    <option value="independent builder floor">independent builder floor</option>
+    <option value="farm house">farm house</option>
+    <option value="serviced apartment">serviced apartment</option>
+  </select>
+  <br><br>
+  <label for="Status_of_house">Choose Status of house:</label>
+  <select name="Status_of_house" id="Status_of_house">
+    <option value="READY TO MOVE">READY TO MOVE</option>
+    <option value="UNDER CONSTRUCTION">UNDER CONSTRUCTION</option>
+  </select>
+  <br><br>
+  <label for="type_of_area">Choose type of area:</label>
+  <select name="type_of_area" id="type_of_area">
+    <option value=" built-up area"> built-up area</option>
+    <option value=" super built-up area"> super built-up area</option>
+    <option value=" carpet area"> carpet area</option>
+    <option value=" plot area"> plot area</option>
+  </select>
+  <br><br>
+  <label for="resale">Resale:</label>
+  <select name="resale" id="resale">
+    <option value="yes">yes</option>
+    <option value="no">no</option>
+  </select>
+  <br><br>
+  <label for="registration">Registration:</label>
+  <select name="registration" id="registration">
+    <option value="yes">yes</option>
+    <option value="no">no</option>
+  </select>
+  <br><br>
+  <label for="bedrooms">Select no.of bedrooms:</label>
+  <select name="bedrooms" id="bedrooms">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    <option value="32">32</option>
+    <option value="33">33</option>
+    <option value="34">34</option>
+    <option value="35">35</option>
+    <option value="36">36</option>
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+    <option value="44">44</option>
+    <option value="45">45</option>
+    <option value="46">46</option>
+    <option value="47">47</option>
+    <option value="48">48</option>
+    <option value="49">49</option>
+    <option value="50">50</option>
+  </select>
+  <br><br>
+  <label for="bathrooms">Select no.of bathrooms:</label>
+  <select name="bathrooms" id="bathrooms">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+    <option value="32">32</option>
+    <option value="33">33</option>
+    <option value="34">34</option>
+    <option value="35">35</option>
+    <option value="36">36</option>
+    <option value="37">37</option>
+    <option value="38">38</option>
+    <option value="39">39</option>
+    <option value="40">40</option>
+    <option value="41">41</option>
+    <option value="42">42</option>
+    <option value="43">43</option>
+    <option value="44">44</option>
+    <option value="45">45</option>
+    <option value="46">46</option>
+    <option value="47">47</option>
+    <option value="48">48</option>
+    <option value="49">49</option>
+    <option value="50">50</option>
+  </select>
+  <br><br>
+    <label for="area_sq.ft">area in sq.ft:</label>
+    <input type="text" id="area_sq.ft" name="area_sq.ft"><br><br>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1> {{ prediction_text }}</h1>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+
+</body>
+</html>
