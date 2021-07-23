@@ -3,6 +3,7 @@ import numpy as np
 import os
 from flask import Flask, request, jsonify, render_template
 from pickle import load
+import math
 
 app = Flask(__name__)
 
@@ -41,10 +42,10 @@ def predict():
     print(area_sqft)
     predictions = Cat_Boost.predict([city,type_of_house,status_of_house,type_of_area,resale,registration,bedrooms,bathrooms,area_sqft])
     
-    predictions = np.exp(predictions)
+    predictions = math.floor(np.exp(predictions))
     
 
-    prediction_text = 'house price is predicted to be :  '+str(predictions)
+    prediction_text = 'house price is predicted to be :  '+str(predictions) + 'Cr'
 
 
     return render_template('index.html', prediction_text=prediction_text)
