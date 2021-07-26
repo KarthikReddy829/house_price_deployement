@@ -42,7 +42,7 @@ def predict():
     print(area_sqft)
     predictions = Cat_Boost.predict([city,type_of_house,status_of_house,type_of_area,resale,registration,bedrooms,bathrooms,area_sqft])
     
-    predictions = round(np.exp(predictions),3)
+    predictions = round(np.exp(predictions),2)
     ##predictions = round(predictions, 2)
     
 
